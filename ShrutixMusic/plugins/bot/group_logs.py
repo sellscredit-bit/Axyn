@@ -86,7 +86,7 @@ async def _on_added(update, member):
             print(ex)
     adder, adder_id = _who(update.from_user)
     await _send_log(
-        f"<b>➕ {nand.mention} ᴀᴅᴅᴇᴅ ɪɴ ᴀ ɴᴇᴡ ɢʀᴏᴜᴘ</b>\n\n"
+        f"<b> {nand.mention} ᴀᴅᴅᴇᴅ ɪɴ ᴀ ɴᴇᴡ ɢʀᴏᴜᴘ</b>\n\n"
         f"<b>ɢʀᴏᴜᴘ :</b> {html.escape(chat.title or NOT_APPLICABLE)}\n"
         f"<b>ɢʀᴏᴜᴘ ɪᴅ :</b> <code>{chat.id}</code>\n"
         f"<b>ɢʀᴏᴜᴘ ʟɪɴᴋ :</b> {_link_text(link)}\n\n"
@@ -111,7 +111,7 @@ async def _on_removed(update):
     else:
         remover, remover_id = _who(actor)
     await _send_log(
-        f"<b>➖ {nand.mention} ʀᴇᴍᴏᴠᴇᴅ ғʀᴏᴍ ᴀ ɢʀᴏᴜᴘ</b>\n\n"
+        f"<b> {nand.mention} ʀᴇᴍᴏᴠᴇᴅ ғʀᴏᴍ ᴀ ɢʀᴏᴜᴘ</b>\n\n"
         f"<b>ɢʀᴏᴜᴘ :</b> {html.escape(chat.title or NOT_APPLICABLE)}\n"
         f"<b>ɢʀᴏᴜᴘ ɪᴅ :</b> <code>{chat.id}</code>\n"
         f"<b>ɢʀᴏᴜᴘ ʟɪɴᴋ :</b> {_link_text(link)}\n\n"

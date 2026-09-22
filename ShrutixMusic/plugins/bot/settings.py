@@ -187,14 +187,14 @@ async def send_repo(_, message: Message):
     await message.reply_video(
         video=REPO_VIDEO,
         caption=(
-            "<b>✨ ʜᴇʏ ᴅᴇᴀʀ, ʜᴇʀᴇ ɪꜱ ᴛʜᴇ ᴏꜰꜰɪᴄɪᴀʟ ʀᴇᴘᴏꜱɪᴛᴏʀʏ ᴏꜰ ᴛʜɪꜱ ʙᴏᴛ ✨</b>\n\n"
-            "🔗 ᴅᴏɴ'ᴛ ꜰᴏʀɢᴇᴛ ᴛᴏ ɢɪᴠᴇ ᴀ ꜱᴛᴀʀ 🌟 ᴀɴᴅ ꜰᴏʟʟᴏᴡ!\n\n"
-            "🧡 ᴄʀᴇᴅɪᴛꜱ : <a href='https://t.me/ShrutiBots'>@ShrutiBots</a>"
+            "<b> ʜᴇʏ ᴅᴇᴀʀ, ʜᴇʀᴇ ɪꜱ ᴛʜᴇ ᴏꜰꜰɪᴄɪᴀʟ ʀᴇᴘᴏꜱɪᴛᴏʀʏ ᴏꜰ ᴛʜɪꜱ ʙᴏᴛ </b>\n\n"
+            " ᴅᴏɴ'ᴛ ꜰᴏʀɢᴇᴛ ᴛᴏ ɢɪᴠᴇ ᴀ ꜱᴛᴀʀ  ᴀɴᴅ ꜰᴏʟʟᴏᴡ!\n\n"
+            " ᴄʀᴇᴅɪᴛꜱ : <a href='https://t.me/ShrutiBots'>@ShrutiBots</a>"
         ),
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("🎵 Music + Management Bot Repo", url="https://github.com/NoxxOP/ShrutiMusic")],
-                [InlineKeyboardButton("🎧 Only Music Bot Repo", url="https://github.com/NoxxOP/ShrutixMusic")]
+                [InlineKeyboardButton(" Music + Management Bot Repo", url="https://github.com/NoxxOP/ShrutiMusic")],
+                [InlineKeyboardButton(" Only Music Bot Repo", url="https://github.com/NoxxOP/ShrutixMusic")]
             ]
         ),
         supports_streaming=True,
@@ -350,7 +350,7 @@ async def authusers_mar(client, CallbackQuery, _):
                     j += 1
                 except:
                     continue
-                msg += f"{j}➤ {user}[<code>{user_id}</code>]\n"
+                msg += f"{j} {user}[<code>{user_id}</code>]\n"
                 msg += f"   {_['auth_8']} {admin_name}[<code>{admin_id}</code>]\n\n"
             upl = InlineKeyboardMarkup(
                 [

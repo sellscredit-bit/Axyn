@@ -84,7 +84,7 @@ class Userbot(Client):
                     LOGGER(__name__).info(f"Assistant 1 status in logger group: {member.status}")
                     
                     # Try to send message
-                    await self.one.send_message(config.LOGGER_ID, "✅ Assistant 1 Started Successfully")
+                    await self.one.send_message(config.LOGGER_ID, " Assistant 1 Started Successfully")
                     LOGGER(__name__).info("Assistant 1 successfully sent message to logger group")
                     
                 except Exception as e:
@@ -119,7 +119,7 @@ class Userbot(Client):
                 assistants.append(2)
                 
                 try:
-                    await self.two.send_message(config.LOGGER_ID, "✅ Assistant 2 Started")
+                    await self.two.send_message(config.LOGGER_ID, " Assistant 2 Started")
                 except Exception as e:
                     LOGGER(__name__).error(f"Assistant 2 failed to access logger group: {e}")
                     exit()
@@ -147,7 +147,7 @@ class Userbot(Client):
                 assistants.append(3)
                 
                 try:
-                    await self.three.send_message(config.LOGGER_ID, "✅ Assistant 3 Started")
+                    await self.three.send_message(config.LOGGER_ID, " Assistant 3 Started")
                 except Exception as e:
                     LOGGER(__name__).error(f"Assistant 3 failed to access logger group: {e}")
                     exit()
@@ -174,7 +174,7 @@ class Userbot(Client):
                 assistants.append(4)
                 
                 try:
-                    await self.four.send_message(config.LOGGER_ID, "✅ Assistant 4 Started")
+                    await self.four.send_message(config.LOGGER_ID, " Assistant 4 Started")
                 except Exception as e:
                     LOGGER(__name__).error(f"Assistant 4 failed to access logger group: {e}")
                     exit()
@@ -201,7 +201,7 @@ class Userbot(Client):
                 assistants.append(5)
                 
                 try:
-                    await self.five.send_message(config.LOGGER_ID, "✅ Assistant 5 Started")
+                    await self.five.send_message(config.LOGGER_ID, " Assistant 5 Started")
                 except Exception as e:
                     LOGGER(__name__).error(f"Assistant 5 failed to access logger group: {e}")
                     exit()

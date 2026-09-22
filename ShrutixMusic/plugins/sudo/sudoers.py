@@ -34,7 +34,7 @@ async def userdel(client, message: Message, _):
             return await message.reply_text(_["general_1"])
     user = await extract_user(message)
     if user.id in spam_protection_users:
-        return await message.reply_text("❌ This user is not in sudolist.")
+        return await message.reply_text(" This user is not in sudolist.")
     
     if user.id not in SUDOERS:
         return await message.reply_text(_["sudo_3"].format(user.mention))
@@ -52,7 +52,7 @@ async def sudoers_list(client, message: Message, _):
     text = _["sudo_5"]
     user = await nand.get_users(OWNER_ID)
     user = user.first_name if not user.mention else user.mention
-    text += f"1➤ {user}\n"
+    text += f"1 {user}\n"
     count = 0
     smex = 0
     for user_id in SUDOERS:
@@ -64,7 +64,7 @@ async def sudoers_list(client, message: Message, _):
                     smex += 1
                     text += _["sudo_6"]
                 count += 1
-                text += f"{count}➤ {user}\n"
+                text += f"{count} {user}\n"
             except:
                 continue
     if not text:
